@@ -1,0 +1,10 @@
+C:\Users\User\Desktop\Материалы\2 курс\Shuffles\Shuffles\bin\Debug\Shuffles.exe.config
+C:\Users\User\Desktop\Материалы\2 курс\Shuffles\Shuffles\bin\Debug\Shuffles.exe
+C:\Users\User\Desktop\Материалы\2 курс\Shuffles\Shuffles\bin\Debug\Shuffles.pdb
+C:\Users\User\Desktop\Материалы\2 курс\Shuffles\Shuffles\obj\Debug\Shuffles.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Материалы\2 курс\Shuffles\Shuffles\obj\Debug\Shuffles.Properties.Resources.resources
+C:\Users\User\Desktop\Материалы\2 курс\Shuffles\Shuffles\obj\Debug\Shuffles.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Материалы\2 курс\Shuffles\Shuffles\obj\Debug\Shuffles.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Материалы\2 курс\Shuffles\Shuffles\obj\Debug\Shuffles.exe
+C:\Users\User\Desktop\Материалы\2 курс\Shuffles\Shuffles\obj\Debug\Shuffles.pdb
+C:\Users\User\Desktop\Материалы\2 курс\Shuffles\Shuffles\obj\Debug\Shuffles.Form_Face.resources
