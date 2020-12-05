@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.FY = new System.Windows.Forms.Button();
-            this.RTB = new System.Windows.Forms.RichTextBox();
             this.TBCount1 = new System.Windows.Forms.TextBox();
             this.Permutations = new System.Windows.Forms.Button();
             this.Rand_Throw = new System.Windows.Forms.Button();
@@ -38,7 +38,10 @@
             this.TBCount4 = new System.Windows.Forms.TextBox();
             this.TBCount3 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.ZedGrath = new ZedGraph.ZedGraphControl();
+            this.Refresh = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // FY
@@ -50,15 +53,6 @@
             this.FY.Text = "Фишер - Йетс";
             this.FY.UseVisualStyleBackColor = true;
             this.FY.Click += new System.EventHandler(this.FY_Click);
-            // 
-            // RTB
-            // 
-            this.RTB.Location = new System.Drawing.Point(244, 47);
-            this.RTB.Name = "RTB";
-            this.RTB.Size = new System.Drawing.Size(109, 202);
-            this.RTB.TabIndex = 1;
-            this.RTB.Text = "";
-            this.RTB.TextChanged += new System.EventHandler(this.RTB_TextChanged);
             // 
             // TBCount1
             // 
@@ -127,21 +121,58 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Размер массива";
             // 
+            // ZedGrath
+            // 
+            this.ZedGrath.Location = new System.Drawing.Point(239, 10);
+            this.ZedGrath.Name = "ZedGrath";
+            this.ZedGrath.ScrollGrace = 0D;
+            this.ZedGrath.ScrollMaxX = 0D;
+            this.ZedGrath.ScrollMaxY = 0D;
+            this.ZedGrath.ScrollMaxY2 = 0D;
+            this.ZedGrath.ScrollMinX = 0D;
+            this.ZedGrath.ScrollMinY = 0D;
+            this.ZedGrath.ScrollMinY2 = 0D;
+            this.ZedGrath.Size = new System.Drawing.Size(596, 286);
+            this.ZedGrath.TabIndex = 15;
+            this.ZedGrath.UseExtendedPrintDialog = true;
+            // 
+            // Refresh
+            // 
+            this.Refresh.Location = new System.Drawing.Point(239, 273);
+            this.Refresh.Name = "Refresh";
+            this.Refresh.Size = new System.Drawing.Size(96, 23);
+            this.Refresh.TabIndex = 16;
+            this.Refresh.Text = "Построение";
+            this.Refresh.UseVisualStyleBackColor = true;
+            this.Refresh.Click += new System.EventHandler(this.Refresh_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(241, 27);
+            this.label2.Location = new System.Drawing.Point(12, 256);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 13);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "Время выполнения";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "label2";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(13, 273);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "label3";
             // 
             // Form_Face
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(369, 252);
+            this.ClientSize = new System.Drawing.Size(835, 308);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.Refresh);
+            this.Controls.Add(this.ZedGrath);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TBCount4);
             this.Controls.Add(this.TBCount3);
@@ -150,10 +181,10 @@
             this.Controls.Add(this.Rand_Throw);
             this.Controls.Add(this.Permutations);
             this.Controls.Add(this.TBCount1);
-            this.Controls.Add(this.RTB);
             this.Controls.Add(this.FY);
             this.Name = "Form_Face";
             this.Text = "Face";
+            this.Load += new System.EventHandler(this.Form_Face_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,7 +193,6 @@
         #endregion
 
         private System.Windows.Forms.Button FY;
-        private System.Windows.Forms.RichTextBox RTB;
         private System.Windows.Forms.TextBox TBCount1;
         private System.Windows.Forms.Button Permutations;
         private System.Windows.Forms.Button Rand_Throw;
@@ -171,7 +201,10 @@
         private System.Windows.Forms.TextBox TBCount4;
         private System.Windows.Forms.TextBox TBCount3;
         private System.Windows.Forms.Label label1;
+        private ZedGraph.ZedGraphControl ZedGrath;
+        private System.Windows.Forms.Button Refresh;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 

@@ -11,11 +11,11 @@ namespace Shuffles
         public static int[] Mix(int[] array)
         {
             Random rand = new Random();
-            int n = rand.Next();
+            long n = rand.Next(array.Length * 10);
 
             int from, to;
 
-            for (int i = 0; i < n; i++)
+            for (long i = 0; i < n; i++)
             {
                 from = rand.Next(array.Length);
                 to = rand.Next(array.Length);

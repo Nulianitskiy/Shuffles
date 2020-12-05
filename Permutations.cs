@@ -29,5 +29,44 @@ namespace Shuffles
             Razm[i] = Razm[j];
             Razm[j] = s;
         }
+
+        //public static int[] numPermutation(int k, int[] array)
+        //{
+        //    long K = Convert.ToInt64(k);
+        //    int n = array.Length;
+        //    bool[] was = new bool[n];
+        //    long alreadyWas = 0;
+        //    int[] perm = new int[n];
+        //    for (int i = 1; i < n; i++)
+        //    {
+        //        alreadyWas = K / Factorial(n - i);
+        //        K %= Factorial(n - i);
+        //        int curFree = 0;
+        //        for (int j = 1; j < n; j++)
+        //        {
+        //            if (was[j] == false)
+        //            {
+        //                curFree++;
+        //                if (curFree == alreadyWas + 1)
+        //                {
+        //                    perm[i] = j;
+        //                    was[j] = true;
+        //                }
+        //            }
+        //        }
+        //    }
+        //    return perm;
+        //}
+
+        //public static long Factorial(int N)
+        //{
+        //    long factorial = 1;
+        //    for (int counter = 1; counter <= N; counter++)
+        //    {
+        //        factorial = factorial * counter;
+        //    }
+
+        //    return factorial;
+        //}
     }
 }
